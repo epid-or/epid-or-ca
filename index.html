@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epid'Or</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background-image: url('assets/hero.jpg'); /* replace with your wide hero image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .logo {
+      width: 260px;
+      max-width: 80%;
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      letter-spacing: 1.5px;
+      opacity: 0.85;
+    }
+
+    /* subtle luxury feel */
+    .tagline span {
+      color: #d4af37; /* champagne gold */
+    }
+
+    /* mobile tweaks */
+    @media (max-width: 768px) {
+      .logo {
+        width: 200px;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+
+  
+    /* Better orientation responsiveness */
+    @media (orientation: landscape) and (max-height: 600px) {
+      .hero {
+        justify-content: center;
+        padding: 1.5rem 3rem;
+      }
+
+      .logo {
+        width: 180px;
+        margin-bottom: 0.8rem;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    @media (orientation: portrait) {
+      .hero {
+        padding: 2rem;
+      }
+
+      .logo {
+        width: 220px;
+      }
+
+      .tagline {
+        max-width: 320px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <!-- LOGO -->
+      <img src="assets/logo-dark.png" alt="Epid'Or Logo" class="logo" />
+
+      <!-- TAGLINE -->
+      <p class="tagline">Traditional Olive Oil Soap, <span>Refined in Gold</span></p>
+    </div>
+  </div>
+
+</body>
+</html>
