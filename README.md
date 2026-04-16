@@ -1,2 +1,2 @@
 # epid-or-ca
-Canadian site for traditional olive oil soap business
+Canadian site for a traditional olive oil soap business
